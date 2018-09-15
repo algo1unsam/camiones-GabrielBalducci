@@ -1,4 +1,3 @@
-import cargas.*
 object empresa {
 	var camion = []
 	var cargaMax = 1000
@@ -20,7 +19,7 @@ object empresa {
 	}
 
 // FUNCIONES TRANSPORTE	
-	method cargar(carga) {if (transporte.puedeCargar(carga)) camion.add(carga)}
+	method cargar 	(carga) {if (transporte.puedeCargar(carga)) camion.add(carga)}
 	method descargar(carga) {transporte.remove (carga)}
 	method tieneCarga () {return transporte.count()>0}
 	

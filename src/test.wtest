@@ -7,3 +7,12 @@ test "bumblebee cambia peligro" {
 	bumbleBee.cambiarForma()
 	assert.that ( empresa.peligroCargas() == 30)
 }
+
+test "ladrillos cambian de peso"{
+	empresa.cargar(ladrillos)
+	assert.that(empresa.pesoCargas() == 2)
+	ladrillos.cambiarCantidad(10)
+	assert.that(empresa.pesoCargas() == 20)
+}
+
+test ""

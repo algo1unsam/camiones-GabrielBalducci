@@ -12,7 +12,7 @@ object bumbleBee {		//800 kg y 15 puntos si auto - 30 puntos si robot
 }
 
 object ladrillos{		// cada ladrillo pesa 2 kg. - 2 puntos
-	var cantidadLadrillos
+	var cantidadLadrillos = 1
 	method cuantosLadrillos() {return cantidadLadrillos}
 	method cambiarCantidad(nuevoValor){cantidadLadrillos = nuevoValor}
 	method peso() {return cantidadLadrillos * 2}

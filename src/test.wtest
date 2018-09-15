@@ -1,0 +1,9 @@
+import cargas.*
+import empresa.*
+
+test "bumblebee cambia peligro" {
+	empresa.cargar(bumbleBee)	
+	assert.that ( empresa.peligroCargas() == 15)
+	bumbleBee.cambiarForma()
+	assert.that ( empresa.peligroCargas() == 30)
+}
